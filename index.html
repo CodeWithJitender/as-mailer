@@ -19,6 +19,42 @@
           padding: 0;
           font-family: Verdana, Geneva, sans-serif;
         }
+        .desktop-only {
+          display: block;
+        }
+        .mobile-only {
+          display: none;
+        }
+        /* 1. Extra Extra Large (Targeting screens smaller than 1400px) */
+        @media (max-width: 1399.98px) {
+          /* Styles for XXL and down */
+        }
+
+        /* 2. Extra Large (Targeting screens smaller than 1200px) */
+        @media (max-width: 1199.98px) {
+          /* Styles for XL and down */
+        }
+
+        /* 3. Large (Targeting screens smaller than 992px) */
+        @media (max-width: 991.98px) {
+          /* Styles for LG and down */
+        }
+
+        /* 4. Medium (Targeting screens smaller than 768px) */
+        @media (max-width: 767.98px) {
+          /* Styles for MD and down */
+          .desktop-only {
+            display: none;
+          }
+          .mobile-only {
+            display: block;
+          }
+        }
+
+        /* 5. Small (Targeting screens smaller than 576px) */
+        @media (max-width: 575.98px) {
+          /* Styles for SM and down */
+        }
       </style>
     </head>
     <body>
@@ -224,7 +260,20 @@
                               <img
                                 src="https://codewithjitender.github.io/as-mailer/image/glocalas.png"
                                 alt="Glocalas"
-                                style="width: 100%; display: block"
+                                class="desktop-only"
+                                style="
+                                  margin: auto;
+                                  max-width: 90%;
+                                "
+                              />
+                              <img
+                                src="https://codewithjitender.github.io/as-mailer/image/glocalas-mobile.png"
+                                alt="Glocalas"
+                                class="mobile-only"
+                                style="
+                                  margin: auto;
+                                  max-width: 100%;
+                                "
                               />
                             </td>
                           </tr>
@@ -352,9 +401,22 @@
                           <tr style="text-align: center">
                             <td>
                               <img
-                                src="https://webror.com/demo/edm/glocal/3feb/glocobanner3.png"
+                                src="https://codewithjitender.github.io/as-mailer/image/payment-via-paypal.png"
                                 alt="Glocalas"
-                                style="width: 100%; display: block"
+                                class="desktop-only"
+                                style="
+                                  margin: auto;
+                                  max-width: 100%;
+                                "
+                              />
+                              <img
+                                src="https://codewithjitender.github.io/as-mailer/image/payment-via-paypal-mobile.png"
+                                alt="Glocalas"
+                                class="mobile-only"
+                                style="
+                                  margin: auto;
+                                  max-width: 100%;
+                                "
                               />
                             </td>
                           </tr>
